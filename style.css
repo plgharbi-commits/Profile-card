@@ -1,0 +1,113 @@
+body {
+  background: linear-gradient(to top, #3498db, #ffffff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  margin: 0;
+  margin-bottom: 5px;
+  font-family: arial;
+}
+a {
+  text-decoration: none;
+}
+main {
+  background-color: white;
+  height: 380px;
+  width: 300px;
+  border-radius: 30px;
+  display: grid;
+  grid-template-rows: 38% 1fr;
+  overflow: hidden;
+  box-shadow: 4px 4px 20px gray;
+  justify-content: stretch;
+}
+
+.photo-part {
+  background-color: rgb(63, 63, 255);
+  display: flex;
+  justify-content: center;
+}
+.my-photo {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 14px;
+  border: 2px solid white;
+  outline: 2px solid rgb(63, 63, 255);
+  z-index: 1;
+}
+
+.info-part {
+  background-color: white;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#my-name {
+  font-size: 16px;
+  font-weight: 700;
+}
+.my-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#my-job {
+  font-size: 14px;
+  color: rgb(100, 100, 100);
+  margin-bottom: 8px;
+}
+
+.my-comptes img {
+  width: 32px;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+button {
+  background-color: rgb(63, 63, 255);
+  color: white;
+  font-family: arial;
+  font-size: 12px;
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  transition:
+    opacity 0.15s,
+    box-shadow 0.15s;
+}
+button:hover {
+  box-shadow: 1px 1px 10px gray;
+}
+button:active {
+  opacity: 0.8;
+}
+
+.skills {
+  margin-top: 15px;
+  list-style: none;
+  padding: 0;
+}
+.skills li {
+  display: inline-block;
+}
+.skills li img {
+  width: 38px;
+  margin: 0 5px;
+}
